@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_AddKindsOfBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddKindsOfBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddKindsOfBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddKindsOfBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTypesFORbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTypesFORbook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTypesFORbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTypesFORbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPublish" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBooksList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBooksList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBooksList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBookToBorrow_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookToBorrow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBookToBorrow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookToBorrowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBorrowingExplaning_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBorrowingExplaning" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBorrowingExplaning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBorrowingExplaningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSignUp" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddSignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBorrowimg_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBorrowimg" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddBorrowimg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBorrowimgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateKindsOfBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKindsOfBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateKindsOfBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKindsOfBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTypesFORbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTypesFORbook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTypesFORbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTypesFORbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublish" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBooksList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBooksList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBooksList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBookToBorrow_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBookToBorrow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBookToBorrow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBookToBorrowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBorrowingExplaning_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBorrowingExplaning" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBorrowingExplaning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBorrowingExplaningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateSignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSignUp" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateSignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBorrowing_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBorrowing" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateBorrowing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBorrowingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusKindsOfBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusKindsOfBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusKindsOfBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusKindsOfBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusTypesFORbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusTypesFORbook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusTypesFORbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusTypesFORbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusPublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusPublish" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusPublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusPublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBooksList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBooksList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBooksList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBookToBorrow_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBookToBorrow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBookToBorrow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBookToBorrowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBorrowingExplaning_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBorrowingExplaning" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBorrowingExplaning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBorrowingExplaningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusSignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusSignUp" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusSignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusSignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBorrowing_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBorrowing" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteStatusBorrowing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStatusBorrowingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetKindsOfBookBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindsOfBookBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetKindsOfBookBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindsOfBookBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTypesFORbookBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesFORbookBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTypesFORbookBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesFORbookBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClientsBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClientsBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBooksListBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksListBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBooksListBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksListBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookToBorrowBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookToBorrowBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookToBorrowBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookToBorrowBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingExplaningBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingExplaningBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingExplaningBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingExplaningBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSignUpBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSignUpBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSignUpBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSignUpBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingBySelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingBySelect" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingBySelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingBySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetKindsOfBookByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindsOfBookByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetKindsOfBookByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKindsOfBookByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTypesFORbookByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesFORbookByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTypesFORbookByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTypesFORbookByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClientsByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClientsByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPublishByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBooksListByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksListByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBooksListByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooksListByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookToBorrowByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookToBorrowByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBookToBorrowByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookToBorrowByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingExplaningByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingExplaningByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingExplaningByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingExplaningByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSignUpByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSignUpByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSignUpByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSignUpByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingByCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetBorrowingByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBorrowingByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListKindsOfBookBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKindsOfBookBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListKindsOfBookBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKindsOfBookBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListTypesFORbookBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTypesFORbookBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListTypesFORbookBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTypesFORbookBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListClientsBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListClientsBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListClientsBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListClientsBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListPublishBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPublishBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListPublishBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPublishBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBooksListBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBooksListBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBooksListBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBooksListBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBookToBorrowBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBookToBorrowBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBookToBorrowBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBookToBorrowBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingExplaningBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingExplaningBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingExplaningBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingExplaningBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListSignUpBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSignUpBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListSignUpBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSignUpBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingBySelectedContain_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingBySelectedContain" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingBySelectedContain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingBySelectedContainResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListKindsOfBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKindsOfBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListKindsOfBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListKindsOfBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListTypesFORbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTypesFORbook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListTypesFORbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListTypesFORbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListPublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPublish" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListPublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListPublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBooksList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBooksList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBooksList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBookToBorrow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBookToBorrow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBookToBorrow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBookToBorrowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingExplaning_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingExplaning" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowingExplaning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingExplaningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListSignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSignUp" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListSignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListSignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowing_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowing" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetListBorrowing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBorrowingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyKindsOfBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyKindsOfBook" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyKindsOfBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyKindsOfBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyPublish_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyPublish" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyPublish_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyPublishResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBooksList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBooksList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBooksList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBorrowing_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBorrowing" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBorrowing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBorrowingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBookToBorrow_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBookToBorrow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNextKeyBookToBorrow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextKeyBookToBorrowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCurrentPath_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentPath" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCurrentPath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveImg_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImg" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveImg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImgResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImage" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="AddKindsOfBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddKindsOfBook" message="tns:IService1_AddKindsOfBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddKindsOfBookResponse" message="tns:IService1_AddKindsOfBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTypesFORbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddTypesFORbook" message="tns:IService1_AddTypesFORbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddTypesFORbookResponse" message="tns:IService1_AddTypesFORbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddClients" message="tns:IService1_AddClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddClientsResponse" message="tns:IService1_AddClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPublish">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddPublish" message="tns:IService1_AddPublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddPublishResponse" message="tns:IService1_AddPublish_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBooksList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBooksList" message="tns:IService1_AddBooksList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBooksListResponse" message="tns:IService1_AddBooksList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBookToBorrow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBookToBorrow" message="tns:IService1_AddBookToBorrow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBookToBorrowResponse" message="tns:IService1_AddBookToBorrow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBorrowingExplaning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBorrowingExplaning" message="tns:IService1_AddBorrowingExplaning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBorrowingExplaningResponse" message="tns:IService1_AddBorrowingExplaning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddSignUp" message="tns:IService1_AddSignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddSignUpResponse" message="tns:IService1_AddSignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBorrowimg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddBorrowimg" message="tns:IService1_AddBorrowimg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddBorrowimgResponse" message="tns:IService1_AddBorrowimg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKindsOfBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateKindsOfBook" message="tns:IService1_UpdateKindsOfBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateKindsOfBookResponse" message="tns:IService1_UpdateKindsOfBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypesFORbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateTypesFORbook" message="tns:IService1_UpdateTypesFORbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateTypesFORbookResponse" message="tns:IService1_UpdateTypesFORbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateClients" message="tns:IService1_UpdateClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateClientsResponse" message="tns:IService1_UpdateClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublish">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdatePublish" message="tns:IService1_UpdatePublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdatePublishResponse" message="tns:IService1_UpdatePublish_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBooksList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBooksList" message="tns:IService1_UpdateBooksList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBooksListResponse" message="tns:IService1_UpdateBooksList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBookToBorrow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBookToBorrow" message="tns:IService1_UpdateBookToBorrow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBookToBorrowResponse" message="tns:IService1_UpdateBookToBorrow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBorrowingExplaning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBorrowingExplaning" message="tns:IService1_UpdateBorrowingExplaning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBorrowingExplaningResponse" message="tns:IService1_UpdateBorrowingExplaning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateSignUp" message="tns:IService1_UpdateSignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateSignUpResponse" message="tns:IService1_UpdateSignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBorrowing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateBorrowing" message="tns:IService1_UpdateBorrowing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateBorrowingResponse" message="tns:IService1_UpdateBorrowing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusKindsOfBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusKindsOfBook" message="tns:IService1_DeleteStatusKindsOfBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusKindsOfBookResponse" message="tns:IService1_DeleteStatusKindsOfBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusTypesFORbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusTypesFORbook" message="tns:IService1_DeleteStatusTypesFORbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusTypesFORbookResponse" message="tns:IService1_DeleteStatusTypesFORbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusClients" message="tns:IService1_DeleteStatusClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusClientsResponse" message="tns:IService1_DeleteStatusClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusPublish">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusPublish" message="tns:IService1_DeleteStatusPublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusPublishResponse" message="tns:IService1_DeleteStatusPublish_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBooksList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusBooksList" message="tns:IService1_DeleteStatusBooksList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusBooksListResponse" message="tns:IService1_DeleteStatusBooksList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBookToBorrow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusBookToBorrow" message="tns:IService1_DeleteStatusBookToBorrow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusBookToBorrowResponse" message="tns:IService1_DeleteStatusBookToBorrow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBorrowingExplaning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusBorrowingExplaning" message="tns:IService1_DeleteStatusBorrowingExplaning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusBorrowingExplaningResponse" message="tns:IService1_DeleteStatusBorrowingExplaning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusSignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusSignUp" message="tns:IService1_DeleteStatusSignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusSignUpResponse" message="tns:IService1_DeleteStatusSignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBorrowing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStatusBorrowing" message="tns:IService1_DeleteStatusBorrowing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStatusBorrowingResponse" message="tns:IService1_DeleteStatusBorrowing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKindsOfBookBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetKindsOfBookBySelect" message="tns:IService1_GetKindsOfBookBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetKindsOfBookBySelectResponse" message="tns:IService1_GetKindsOfBookBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesFORbookBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTypesFORbookBySelect" message="tns:IService1_GetTypesFORbookBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTypesFORbookBySelectResponse" message="tns:IService1_GetTypesFORbookBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetClientsBySelect" message="tns:IService1_GetClientsBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetClientsBySelectResponse" message="tns:IService1_GetClientsBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPublishBySelect" message="tns:IService1_GetPublishBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPublishBySelectResponse" message="tns:IService1_GetPublishBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksListBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBooksListBySelect" message="tns:IService1_GetBooksListBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBooksListBySelectResponse" message="tns:IService1_GetBooksListBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookToBorrowBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookToBorrowBySelect" message="tns:IService1_GetBookToBorrowBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookToBorrowBySelectResponse" message="tns:IService1_GetBookToBorrowBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingExplaningBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBorrowingExplaningBySelect" message="tns:IService1_GetBorrowingExplaningBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBorrowingExplaningBySelectResponse" message="tns:IService1_GetBorrowingExplaningBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSignUpBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSignUpBySelect" message="tns:IService1_GetSignUpBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSignUpBySelectResponse" message="tns:IService1_GetSignUpBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingBySelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBorrowingBySelect" message="tns:IService1_GetBorrowingBySelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBorrowingBySelectResponse" message="tns:IService1_GetBorrowingBySelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKindsOfBookByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetKindsOfBookByCode" message="tns:IService1_GetKindsOfBookByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetKindsOfBookByCodeResponse" message="tns:IService1_GetKindsOfBookByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesFORbookByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTypesFORbookByCode" message="tns:IService1_GetTypesFORbookByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTypesFORbookByCodeResponse" message="tns:IService1_GetTypesFORbookByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetClientsByCode" message="tns:IService1_GetClientsByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetClientsByCodeResponse" message="tns:IService1_GetClientsByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPublishByCode" message="tns:IService1_GetPublishByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPublishByCodeResponse" message="tns:IService1_GetPublishByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksListByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBooksListByCode" message="tns:IService1_GetBooksListByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBooksListByCodeResponse" message="tns:IService1_GetBooksListByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookToBorrowByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBookToBorrowByCode" message="tns:IService1_GetBookToBorrowByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBookToBorrowByCodeResponse" message="tns:IService1_GetBookToBorrowByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingExplaningByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBorrowingExplaningByCode" message="tns:IService1_GetBorrowingExplaningByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBorrowingExplaningByCodeResponse" message="tns:IService1_GetBorrowingExplaningByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSignUpByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSignUpByCode" message="tns:IService1_GetSignUpByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSignUpByCodeResponse" message="tns:IService1_GetSignUpByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetBorrowingByCode" message="tns:IService1_GetBorrowingByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetBorrowingByCodeResponse" message="tns:IService1_GetBorrowingByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListKindsOfBookBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListKindsOfBookBySelectedContain" message="tns:IService1_GetListKindsOfBookBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListKindsOfBookBySelectedContainResponse" message="tns:IService1_GetListKindsOfBookBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTypesFORbookBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListTypesFORbookBySelectedContain" message="tns:IService1_GetListTypesFORbookBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListTypesFORbookBySelectedContainResponse" message="tns:IService1_GetListTypesFORbookBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListClientsBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListClientsBySelectedContain" message="tns:IService1_GetListClientsBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListClientsBySelectedContainResponse" message="tns:IService1_GetListClientsBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListPublishBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListPublishBySelectedContain" message="tns:IService1_GetListPublishBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListPublishBySelectedContainResponse" message="tns:IService1_GetListPublishBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBooksListBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBooksListBySelectedContain" message="tns:IService1_GetListBooksListBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBooksListBySelectedContainResponse" message="tns:IService1_GetListBooksListBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBookToBorrowBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBookToBorrowBySelectedContain" message="tns:IService1_GetListBookToBorrowBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBookToBorrowBySelectedContainResponse" message="tns:IService1_GetListBookToBorrowBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingExplaningBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBorrowingExplaningBySelectedContain" message="tns:IService1_GetListBorrowingExplaningBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBorrowingExplaningBySelectedContainResponse" message="tns:IService1_GetListBorrowingExplaningBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSignUpBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListSignUpBySelectedContain" message="tns:IService1_GetListSignUpBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListSignUpBySelectedContainResponse" message="tns:IService1_GetListSignUpBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingBySelectedContain">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBorrowingBySelectedContain" message="tns:IService1_GetListBorrowingBySelectedContain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBorrowingBySelectedContainResponse" message="tns:IService1_GetListBorrowingBySelectedContain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListKindsOfBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListKindsOfBook" message="tns:IService1_GetListKindsOfBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListKindsOfBookResponse" message="tns:IService1_GetListKindsOfBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListTypesFORbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListTypesFORbook" message="tns:IService1_GetListTypesFORbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListTypesFORbookResponse" message="tns:IService1_GetListTypesFORbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListClients" message="tns:IService1_GetListClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListClientsResponse" message="tns:IService1_GetListClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListPublish">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListPublish" message="tns:IService1_GetListPublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListPublishResponse" message="tns:IService1_GetListPublish_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBooksList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBooksList" message="tns:IService1_GetListBooksList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBooksListResponse" message="tns:IService1_GetListBooksList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBookToBorrow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBookToBorrow" message="tns:IService1_GetListBookToBorrow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBookToBorrowResponse" message="tns:IService1_GetListBookToBorrow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingExplaning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBorrowingExplaning" message="tns:IService1_GetListBorrowingExplaning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBorrowingExplaningResponse" message="tns:IService1_GetListBorrowingExplaning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListSignUp" message="tns:IService1_GetListSignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListSignUpResponse" message="tns:IService1_GetListSignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetListBorrowing" message="tns:IService1_GetListBorrowing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetListBorrowingResponse" message="tns:IService1_GetListBorrowing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyKindsOfBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNextKeyKindsOfBook" message="tns:IService1_GetNextKeyKindsOfBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNextKeyKindsOfBookResponse" message="tns:IService1_GetNextKeyKindsOfBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyPublish">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNextKeyPublish" message="tns:IService1_GetNextKeyPublish_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNextKeyPublishResponse" message="tns:IService1_GetNextKeyPublish_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBooksList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNextKeyBooksList" message="tns:IService1_GetNextKeyBooksList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNextKeyBooksListResponse" message="tns:IService1_GetNextKeyBooksList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBorrowing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNextKeyBorrowing" message="tns:IService1_GetNextKeyBorrowing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNextKeyBorrowingResponse" message="tns:IService1_GetNextKeyBorrowing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBookToBorrow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNextKeyBookToBorrow" message="tns:IService1_GetNextKeyBookToBorrow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNextKeyBookToBorrowResponse" message="tns:IService1_GetNextKeyBookToBorrow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentPath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCurrentPath" message="tns:IService1_GetCurrentPath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCurrentPathResponse" message="tns:IService1_GetCurrentPath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveImg" message="tns:IService1_SaveImg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveImgResponse" message="tns:IService1_SaveImg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetImage" message="tns:IService1_GetImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetImageResponse" message="tns:IService1_GetImage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddKindsOfBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddKindsOfBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTypesFORbook">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddTypesFORbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPublish">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddPublish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBooksList">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBookToBorrow">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBookToBorrow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBorrowingExplaning">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBorrowingExplaning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSignUp">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddSignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBorrowimg">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddBorrowimg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKindsOfBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateKindsOfBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTypesFORbook">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateTypesFORbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublish">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdatePublish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBooksList">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBookToBorrow">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBookToBorrow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBorrowingExplaning">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBorrowingExplaning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignUp">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateSignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBorrowing">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateBorrowing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusKindsOfBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusKindsOfBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusTypesFORbook">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusTypesFORbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusPublish">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusPublish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBooksList">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBookToBorrow">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusBookToBorrow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBorrowingExplaning">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusBorrowingExplaning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusSignUp">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusSignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStatusBorrowing">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteStatusBorrowing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKindsOfBookBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetKindsOfBookBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesFORbookBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTypesFORbookBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetClientsBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPublishBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksListBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBooksListBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookToBorrowBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookToBorrowBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingExplaningBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBorrowingExplaningBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignUpBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSignUpBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingBySelect">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBorrowingBySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKindsOfBookByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetKindsOfBookByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTypesFORbookByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTypesFORbookByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetClientsByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPublishByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksListByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBooksListByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookToBorrowByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBookToBorrowByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingExplaningByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBorrowingExplaningByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSignUpByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSignUpByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBorrowingByCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetBorrowingByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListKindsOfBookBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListKindsOfBookBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListTypesFORbookBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListTypesFORbookBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListClientsBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListClientsBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListPublishBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListPublishBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBooksListBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBooksListBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBookToBorrowBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBookToBorrowBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingExplaningBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBorrowingExplaningBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSignUpBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListSignUpBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingBySelectedContain">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBorrowingBySelectedContain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListKindsOfBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListKindsOfBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListTypesFORbook">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListTypesFORbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListPublish">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListPublish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBooksList">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBookToBorrow">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBookToBorrow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowingExplaning">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBorrowingExplaning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSignUp">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListSignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBorrowing">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetListBorrowing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyKindsOfBook">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNextKeyKindsOfBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyPublish">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNextKeyPublish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBooksList">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNextKeyBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBorrowing">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNextKeyBorrowing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextKeyBookToBorrow">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNextKeyBookToBorrow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentPath">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCurrentPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImg">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveImg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImage">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

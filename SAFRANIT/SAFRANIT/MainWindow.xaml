@@ -1,0 +1,33 @@
+﻿<Window x:Class="SAFRANIT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SAFRANIT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" VerticalAlignment="Stretch" Background="Azure" >
+            <MenuItem x:Name="b1" Header="השאלות" FontSize="50" Background="Lavender" Click="b1_Click"/>
+            <MenuItem x:Name="s1" Header="רישום לקוחות" FontSize="50" Background="Aquamarine" Click="s1_Click"/>
+            <MenuItem x:Name="t1" Header="טיפול בספרים" FontSize="50" Background="BlanchedAlmond" Click="t1_Click"/>
+            <MenuItem Header="ניהול מערכת" FontSize="50" Background="Honeydew" >
+                <MenuItem x:Name="pub2" Header="הוצאות לאור" FontSize="20" Background="Honeydew" Click="pub2_Click"/>
+                <MenuItem x:Name="kindsof2" Header="סוגי ספרים" FontSize="20" Background="Honeydew" Click="kindsof2_Click"/>
+                <MenuItem x:Name="typesfor2" Header="סוגים לספר" FontSize="20" Background="Honeydew" Click="typesfor2_Click"/>
+                <MenuItem x:Name="booklist2" Header=" עריכת ספרים" FontSize="20" Background="Honeydew" Click="booklist2_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="us1" Header="ספרים" FontSize="50" Background="LightPink" Click="us1_Click"/>
+            <MenuItem Header="החזרות" FontSize="50" Background="Beige">
+                <MenuItem Header="החזרות לפי קוד ספר" Background="Beige" FontSize="30" x:Name="ret" Click="ret_Click"/>
+                <MenuItem Header="החזרות לפי תעודת זהות" Background="Beige" FontSize="30" x:Name="ret2" Click="ret2_Click"/>
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="myframe" Grid.Row="1" />
+    </Grid>
+    
+</Window>

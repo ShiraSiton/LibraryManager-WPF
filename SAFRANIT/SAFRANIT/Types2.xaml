@@ -1,0 +1,38 @@
+﻿<Page x:Class="SAFRANIT.Types2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SAFRANIT"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Types2" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock   Text="  ספר" Grid.Row="0" Grid.Column="2"  Margin="20,0"   FontSize="50" Background="Honeydew" VerticalAlignment="Bottom"/>
+        <ComboBox    x:Name="CodeBook" Grid.Row="1" Grid.Column="2"  Margin="20" />
+        <TextBlock Grid.Row="0" Grid.Column="1" Margin="20,0"  Text="   סוג ספר" FontSize="50" Background="Honeydew" VerticalAlignment="Bottom"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" Margin="20" x:Name="CodeKindOfBook"/>
+        <Button  Margin="20,0,20,20" Grid.Row="0" Grid.Column="0" Background="Honeydew" x:Name="addCodeBook" Content="add" FontSize="40" Click="addCodeBook_Click" Height="72" VerticalAlignment="Bottom"  />
+        <Button  Margin="20" Grid.Row="1" Grid.Column="0" Background="Honeydew" x:Name="newCodeBook" Content="new" FontSize="40" Click="newCodeBook_Click"   />
+        <ListView x:Name="lstvTypesFORbook" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="90" Width="600" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn  Header=" ספר" Width="300" DisplayMemberBinding="{Binding CodeBook.NameBook}"/>
+                    <GridViewColumn Header=" סוג ספר" Width="300" DisplayMemberBinding="{Binding CodeKindOfBook.NameKindOfBook}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

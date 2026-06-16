@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="KindsOfBook">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodeKindOfBook" type="xs:int" />
+          <xs:element minOccurs="0" name="NameKindOfBook" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="KindsOfBook" nillable="true" type="tns:KindsOfBook" />
+  <xs:complexType name="BaseEntity">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BaseEntity" nillable="true" type="tns:BaseEntity" />
+  <xs:complexType name="TypesFORbook">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodeBook" nillable="true" type="tns:BooksList" />
+          <xs:element minOccurs="0" name="CodeKindOfBook" nillable="true" type="tns:KindsOfBook" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TypesFORbook" nillable="true" type="tns:TypesFORbook" />
+  <xs:complexType name="BooksList">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodeBook" type="xs:int" />
+          <xs:element minOccurs="0" name="CodePublish" nillable="true" type="tns:Publish" />
+          <xs:element minOccurs="0" name="Copies" type="xs:int" />
+          <xs:element minOccurs="0" name="Imagb" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NameBook" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusBook" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BooksList" nillable="true" type="tns:BooksList" />
+  <xs:complexType name="Publish">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodePublish" type="xs:int" />
+          <xs:element minOccurs="0" name="NamePublish" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Publish" nillable="true" type="tns:Publish" />
+  <xs:complexType name="Clients">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Children" type="xs:int" />
+          <xs:element minOccurs="0" name="Fname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Fone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IdClient" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Lname" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Clients" nillable="true" type="tns:Clients" />
+  <xs:complexType name="BookToBorrow">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodeBook" nillable="true" type="tns:BooksList" />
+          <xs:element minOccurs="0" name="CodeSidoory" type="xs:int" />
+          <xs:element minOccurs="0" name="StatusToBorrow" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookToBorrow" nillable="true" type="tns:BookToBorrow" />
+  <xs:complexType name="BorrowingExplaning">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookToBorrow1" nillable="true" type="tns:BookToBorrow" />
+          <xs:element minOccurs="0" name="CodeBorrow" nillable="true" type="tns:Borrowing" />
+          <xs:element minOccurs="0" name="ReturningTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BorrowingExplaning" nillable="true" type="tns:BorrowingExplaning" />
+  <xs:complexType name="Borrowing">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodeBorrow" type="xs:int" />
+          <xs:element minOccurs="0" name="DateBorrow" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IdClient" nillable="true" type="tns:Clients" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Borrowing" nillable="true" type="tns:Borrowing" />
+  <xs:complexType name="SignUp">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EndSignTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IdClient" nillable="true" type="tns:Clients" />
+          <xs:element minOccurs="0" name="SignDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SignUp" nillable="true" type="tns:SignUp" />
+  <xs:complexType name="ArrayOfKindsOfBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KindsOfBook" nillable="true" type="tns:KindsOfBook" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKindsOfBook" nillable="true" type="tns:ArrayOfKindsOfBook" />
+  <xs:complexType name="ArrayOfTypesFORbook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TypesFORbook" nillable="true" type="tns:TypesFORbook" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTypesFORbook" nillable="true" type="tns:ArrayOfTypesFORbook" />
+  <xs:complexType name="ArrayOfClients">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Clients" nillable="true" type="tns:Clients" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClients" nillable="true" type="tns:ArrayOfClients" />
+  <xs:complexType name="ArrayOfPublish">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Publish" nillable="true" type="tns:Publish" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPublish" nillable="true" type="tns:ArrayOfPublish" />
+  <xs:complexType name="ArrayOfBooksList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BooksList" nillable="true" type="tns:BooksList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBooksList" nillable="true" type="tns:ArrayOfBooksList" />
+  <xs:complexType name="ArrayOfBookToBorrow">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookToBorrow" nillable="true" type="tns:BookToBorrow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookToBorrow" nillable="true" type="tns:ArrayOfBookToBorrow" />
+  <xs:complexType name="ArrayOfBorrowingExplaning">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BorrowingExplaning" nillable="true" type="tns:BorrowingExplaning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBorrowingExplaning" nillable="true" type="tns:ArrayOfBorrowingExplaning" />
+  <xs:complexType name="ArrayOfSignUp">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SignUp" nillable="true" type="tns:SignUp" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSignUp" nillable="true" type="tns:ArrayOfSignUp" />
+  <xs:complexType name="ArrayOfBorrowing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Borrowing" nillable="true" type="tns:Borrowing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBorrowing" nillable="true" type="tns:ArrayOfBorrowing" />
+</xs:schema>
