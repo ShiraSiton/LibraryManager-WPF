@@ -89,3 +89,30 @@ A full-featured **City Library Management System** built with C#, WPF, and WCF. 
 ├── SAFRANIT/                       # Librarian WPF app (management)
 └── Images/                         # Book cover images
 ```
+
+## Screenshots
+
+### Librarian App (SAFRANIT)
+
+| Home Page | Customer Registration |
+|:---:|:---:|
+| ![Home Page](screenshots/Home%20page.png) | ![Customer Registration](screenshots/Customer%20registration.png) |
+
+| Book Editing | Types of Books |
+|:---:|:---:|
+| ![Book Editing](screenshots/Book%20editing.png) | ![Types of Books](screenshots/Types%20of%20books.png) |
+
+| Publishing Houses | Viewing Books in Library |
+|:---:|:---:|
+| ![Publishing Houses](screenshots/Publishing%20houses.png) | ![Viewing Books in Library](screenshots/Viewing%20books%20in%20the%20library.png) |
+
+### Client App (LAKOACH)
+
+| Borrowing Books | Returning Books |
+|:---:|:---:|
+| ![Borrowing Books](screenshots/Borrowing%20books.png) | ![Returning Books](screenshots/Returning%20books.png) |
+
+| Book Care |
+|:---:|
+| ![Book Care](screenshots/Book%20care.png) |
+```
