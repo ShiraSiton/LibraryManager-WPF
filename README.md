@@ -92,27 +92,19 @@ A full-featured **City Library Management System** built with C#, WPF, and WCF. 
 
 ## Screenshots
 
-### Librarian App (SAFRANIT)
-
-| Home Page | Customer Registration |
-|:---:|:---:|
-| ![Home Page](screenshots/Home%20page.png) | ![Customer Registration](screenshots/Customer%20registration.png) |
-
-| Book Editing | Types of Book | Types of Books |
+| Home Page | Customer Registration | Book Editing |
 |:---:|:---:|:---:|
-| ![Book Editing](screenshots/Book%20editing.png) | ![Types of Book](screenshots/Types%20of%20book.png) | ![Types of Books](screenshots/Types%20of%20books.png) |
+| ![Home Page](screenshots/Home%20page.png) | ![Customer Registration](screenshots/Customer%20registration.png) | ![Book Editing](screenshots/Book%20editing.png) |
 
-| Publishing Houses | Viewing Books in Library |
-|:---:|:---:|
-| ![Publishing Houses](screenshots/Publishing%20houses.png) | ![Viewing Books in Library](screenshots/Viewing%20books%20in%20the%20library.png) |
-
-### Client App (LAKOACH)
-
-| Borrowing Books | Return by ID | Return by Book Code |
+| Types of Book | Types of Books | Publishing Houses |
 |:---:|:---:|:---:|
-| ![Borrowing Books](screenshots/Borrowing%20books.png) | ![Return by ID](screenshots/Return%20by%20ID.png) | ![Return by Book Code](screenshots/Return%20by%20book%20code.png) |
+| ![Types of Book](screenshots/Types%20of%20book.png) | ![Types of Books](screenshots/Types%20of%20books.png) | ![Publishing Houses](screenshots/Publishing%20houses.png) |
 
-| Book Care |
-|:---:|
-| ![Book Care](screenshots/Book%20care.png) |
+| Viewing Books in Library | Borrowing Books | Return by ID |
+|:---:|:---:|:---:|
+| ![Viewing Books in Library](screenshots/Viewing%20books%20in%20the%20library.png) | ![Borrowing Books](screenshots/Borrowing%20books.png) | ![Return by ID](screenshots/Return%20by%20ID.png) |
+
+| Return by Book Code | Book Care |
+|:---:|:---:|
+| ![Return by Book Code](screenshots/Return%20by%20book%20code.png) | ![Book Care](screenshots/Book%20care.png) |
 ```
