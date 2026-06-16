@@ -98,9 +98,9 @@ A full-featured **City Library Management System** built with C#, WPF, and WCF. 
 |:---:|:---:|
 | ![Home Page](screenshots/Home%20page.png) | ![Customer Registration](screenshots/Customer%20registration.png) |
 
-| Book Editing | Types of Books |
-|:---:|:---:|
-| ![Book Editing](screenshots/Book%20editing.png) | ![Types of Books](screenshots/Types%20of%20books.png) |
+| Book Editing | Types of Book | Types of Books |
+|:---:|:---:|:---:|
+| ![Book Editing](screenshots/Book%20editing.png) | ![Types of Book](screenshots/Types%20of%20book.png) | ![Types of Books](screenshots/Types%20of%20books.png) |
 
 | Publishing Houses | Viewing Books in Library |
 |:---:|:---:|
@@ -108,9 +108,9 @@ A full-featured **City Library Management System** built with C#, WPF, and WCF. 
 
 ### Client App (LAKOACH)
 
-| Borrowing Books | Returning Books |
-|:---:|:---:|
-| ![Borrowing Books](screenshots/Borrowing%20books.png) | ![Returning Books](screenshots/Returning%20books.png) |
+| Borrowing Books | Return by ID | Return by Book Code |
+|:---:|:---:|:---:|
+| ![Borrowing Books](screenshots/Borrowing%20books.png) | ![Return by ID](screenshots/Return%20by%20ID.png) | ![Return by Book Code](screenshots/Return%20by%20book%20code.png) |
 
 | Book Care |
 |:---:|
